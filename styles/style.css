@@ -28,6 +28,13 @@ p{
 .send-button {
   width: 200px;
 }
+.social-icon{
+  border: 1px solid #DD1D94;
+  border-radius: 50px;
+  height: 48px;
+  width: 48px;
+  justify-content: center;
+}
 .featurette-divider {
     margin: 5rem 0; 
   }
