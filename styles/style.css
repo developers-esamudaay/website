@@ -1,0 +1,57 @@
+p{
+  padding: 0;
+  margin: 0
+}
+.navbar {
+  background-color: #DD1D94;
+}
+.navbar-title {
+    color: #ffff;
+    font-weight: bold;
+}
+.bullet-points {
+  margin-right: 6px;
+  
+}
+.whitelabeled {
+    margin-bottom: 1.5rem;
+  text-align: center;
+}
+.contact-us-button {
+  background-color: #6636AB;
+  color: #fff;
+}
+.contact-us-button:hover {
+  background-color: #6636AB;
+  color: #fff;
+}
+.send-button {
+  width: 200px;
+}
+.featurette-divider {
+    margin: 5rem 0; 
+  }
+  
+
+  .featurette-heading {
+    letter-spacing: -.05rem;
+  }
+
+  
+  @media (min-width: 40em) {
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
