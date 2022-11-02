@@ -6,8 +6,9 @@ a{
   padding: 0 !important;
   margin: 0 !important;
 }
-.navbar {
+.navbar-block {
   background-color: #5F3A9F;
+  padding: 16px 0;
 }
 /* jumbotron block */
 .jumbotron {
@@ -57,14 +58,6 @@ a{
 .success-block-card{
   width: 300px;
 }
-.success-block-cards:nth-child(n+2){
-  display: flex;
-  justify-content: center;
-}
-.success-block-cards:nth-child(n+3){
-  display: flex;
-  justify-content: end;
-}
 .success-block-card-image{
   /* padding: 32px; */
   height: 200px;
@@ -102,6 +95,7 @@ a{
   border: 1px solid #D4C7EB;
   padding: 20px;
   border-radius: 5px;
+  align-items: center;
 }
 .our-offerings-block-card-title {
   color: #211438;
@@ -175,15 +169,27 @@ padding: 6px 0;
   justify-content: center;
 }
 .social-media{
-  height: 40px;
+  /* height: 40px;
   width: 40px;
   border: 1px solid #6636AB;
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 4px;
+  align-items: center; */
+  margin: 8px;
   cursor: pointer;
+}
+
+/* miscellanious */
+.success-block-card:hover,.our-offerings-block-card:hover{
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+  box-shadow: 4px 4px 8px 2px rgba(76, 44, 112, 0.15);
+}
+.why-esamudaay-block-card:hover{
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+  box-shadow: 4px 16px 20px 2px rgba(11, 7, 17, 0.15);
 }
 
 /* mobile view */
@@ -208,5 +214,12 @@ padding: 6px 0;
     display: flex;
     justify-content: center !important;
     margin: 16px 0 !important;
+  }
+  .our-offerings-block-card, .why-esamudaay-block-card{
+    text-align: center;
+  }
+  .our-offerings-block-card-title-outer, .why-esamudaay-block-card-icon{
+    display: flex;
+    justify-content: center;
   }
 }
