@@ -38,7 +38,7 @@ a{
 }
 /* success stories block */
 .success-block{
-  background-color: #D4C7EB;
+  background-color: #F1ECF8;
   padding: 80px 0;
 }
 .success-block-text{
@@ -57,6 +57,7 @@ a{
 }
 .success-block-card{
   width: 300px;
+  border: none;
 }
 .success-block-card-image{
   /* padding: 32px; */
