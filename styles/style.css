@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Tillana:wght@700&display=swap');
 p{
   padding: 0;
   margin: 0
@@ -6,134 +7,132 @@ a{
   padding: 0 !important;
   margin: 0 !important;
 }
+/* navbar */
 .navbar-block {
-  background-color: #5F3A9F;
   padding: 16px 0;
 }
 /* jumbotron block */
-.jumbotron {
-  background-color: #5F3A9F;
-}
 .jumbotron-content{
-  padding: 80px 0 100px 0;
+  padding: 54px 0 220px 0;
 }
 .jumbotron-title {
   font-size: 36px;
   font-weight: 600;
-  color: #fff;
+  color: #481c0d;
 }
 .jumbotron-subtitle {
+  /* position: relative; */
   font-size: 20px;
   font-weight: 400;
-  color: #fff;
+  color: #333333;
   padding: 24px 0;
 }
 .jumbotron-image {
-  display: flex;
-  justify-content: end;
+  position: absolute;
+  right: 0;
+  top: 140px;
 }
-.btn-outline, .btn-outline:hover{
-  color: #F1ECF8;
-  border: 1px solid #F1ECF8;
-}
-/* success stories block */
-.success-block{
-  background-color: #F1ECF8;
-  padding: 80px 0;
-}
-.success-block-text{
-  text-transform: uppercase;
-  color: #4E3083;
-  font-weight: 500;
-  font-size: 20px;
-}
-.success-block-title {
-  color: #211438;
-  font-size: 36px;
+.btn-contact-us, .btn-contact-us:hover{
+  color: #fff;
+  background-color: #ff473e;
   font-weight: 600;
-}
-.success-block-cards{
-  padding: 48px 0 0 0;
-}
-.success-block-card{
-  width: 300px;
-  border: none;
-}
-.success-block-card-image{
-  /* padding: 32px; */
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.success-block-card-title{
-  font-size: 20px;
-  font-weight: 600;
-}
-.success-block-card-download{
-  color: #5F3A9F;
-  font-weight: 500;
+  height: 48px;
 }
 /* our offerings block  */
 .our-offerings-block {
-  padding: 80px 0;
+  padding: 64px 0;
+  background-color: #fdefea;
+  color: #481c0d;
 }
 .our-offerings-block-title {
   font-size: 36px;
   font-weight: 600;
+  text-align: center;
   color: #211438;
+}
+.our-offerings-block-subtitle-outer{
+  display: flex;
+  justify-content: center;
 }
 .our-offerings-block-subtitle{
-  color: #4E3083;
-  font-size: 20px;
+  color: #4d4d4d;
   font-weight: 400;
   padding: 4px 0;
+  width: 50%;
+  text-align: center;
 }
-.our-offerings-block-cards {
-  padding: 64px 0 0 0;
+.our-offerings-outer-block{
+padding: 100px 0 50px 0;
 }
-.our-offerings-block-card{
-  border: 1px solid #D4C7EB;
-  padding: 20px;
-  border-radius: 5px;
+.our-offerings-block-inner {
+  display: flex;
   align-items: center;
 }
-.our-offerings-block-card-title {
-  color: #211438;
-  border-bottom: 4px solid #4E3083;
+.our-offerings-block-inner-title{
+  color: #481c0d;
+  border-bottom: 4px solid #f05c2b;
   width: 122px;
   font-size: 20px;
 font-weight: 600;
 }
-.our-offerings-block-card-contect{
-  color:#4D4D4D;
+.our-offerings-block-inner-subtitle{
+  color: #4d4d4d;
+  padding: 16px 0 28px 0;
+}
+/* plugins block */
+.plugins-block{
+  padding: 64px 0;
+}
+.plugins-block-title-outer{
+  display: flex;
+  justify-content: center;
+}
+.plugins-block-contact-us{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.plugins-block-title{
+  color: #481c0d;
+  width: 60%;
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+}
+.plugins-block-logos{
+  margin-top: 100px;
+}
+.plugins-block-logo{
+  padding: 24px;
 }
 /* why esamudaay block */
-.why-esamudaay-block{
-  background-color: #5F3A9F;
-  padding: 56px 0;
+.why-esamudaay-block-title-block {
+  background: linear-gradient(179deg, #ff473e 5%, #ffb636 95%);
+  padding: 64px 0 144px 0;
 }
-.why-esamudaay-block-cards{
-  margin-top: 56px;
-}
-.why-esamudaay-block-card {
-  padding: 24px;
-  min-height: 360px;
-}
-.why-esamudaay-block-title {
+.why-esamudaay-block-title{
+  display: flex;
+  justify-content: center;
   color: #fff;
   font-size: 36px;
   font-weight: 600;
 }
+.why-esamudaay-block-cards-outer{
+  position: relative;
+}
+.why-esamudaay-block-cards{
+  margin-top: -120px;
+}
+.why-esamudaay-block-card {
+  padding: 32px;
+  min-height: 360px;
+  box-shadow: 1px 1px 4px 2px rgba(255, 199, 39, 0.24);
+  border-radius: 16px;
+  border: none;
+}
 .why-esamudaay-block-card-icon-block {
-  background-color: #F1ECF8;
-  border: 1px solid #D4C7EB;
-  border-radius: 5px;
-  height: 60px;
-  width: 60px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .why-esamudaay-block-card-title {
   font-size: 24px;
@@ -145,6 +144,9 @@ font-weight: 600;
 padding: 6px 0;
 }
 /* footer */
+.footer-block{
+  background-color: #FDEFEA;
+}
 .footer-contact-button {
   background-color: #5F3A9F;
   color: #fff;
@@ -157,10 +159,15 @@ padding: 6px 0;
   padding: 64px 0;
 }
 .footer-block-lower {
-  background-color: #F1ECF8;
+  background-color: #FDEFEA;
 }
 .footer-text{
   text-align: center;
+  color: #333333;
+}
+.footer-block-lower-text {
+  font-weight: 500;
+  font-size: 16px;
 }
 .social-icon{
   border: 1px solid #DD1D94;
@@ -170,51 +177,109 @@ padding: 6px 0;
   justify-content: center;
 }
 .social-media{
-  /* height: 40px;
-  width: 40px;
-  border: 1px solid #6636AB;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
   margin: 8px;
   cursor: pointer;
 }
 
-/* miscellanious */
-.success-block-card:hover,.our-offerings-block-card:hover{
-  transition: all .4s ease;
-  -webkit-transition: all .4s ease;
-  box-shadow: 4px 4px 8px 2px rgba(76, 44, 112, 0.15);
+/* testimonial */
+.testimonial{
+  padding: 100px 0;
 }
+.testimonial-body{
+  display: flex;
+  align-items: center;
+}
+.testimonial-title {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.33;
+  color: #481c0d;
+  margin-top: 32px;
+  
+}
+.testimonial-card{
+  padding: 40px;
+}
+.testimonial-card-header{
+  display: flex;
+  align-items: center;
+}
+.testimonial-card-header-image {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 50px;
+  border: 3px solid #FFDA99;
+  margin-right: 16px;
+}
+.testimonial-card-header-content-block-name{
+  font-size: 16px;
+  color: #FF473E;
+  font-weight: 500;
+}
+.testimonial-card-header-content-block-designation{
+font-size: 12px;
+color: #808080;
+}
+.testimonial-card-content-block-text{
+  margin-top: 24px;
+  font-size: 14px;
+  font-family: "Manrope"
+}
+.testimonial-card-body {
+  background-image: url("../images/testimonial-background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 148px 48px;
+}
+
+/* miscellanious */
 .why-esamudaay-block-card:hover{
   transition: all .4s ease;
   -webkit-transition: all .4s ease;
-  box-shadow: 4px 16px 20px 2px rgba(11, 7, 17, 0.15);
+  box-shadow: 4px 16px 20px 2px rgba(250, 193, 87, 0.15);
+}
+.btn-contact-mobile{
+  display: none;
+}
+.fast{
+  font-family: "Tillana";
+  color: #F05C2B;
 }
 
 /* mobile view */
 @media (max-width: 576px){
-  .jumbotron-title, .jumbotron-subtitle,.success-block-text, .success-block-title, .why-esamudaay-block-title, .our-offerings-block-title, .our-offerings-block-subtitle {
+  .jumbotron-image{
+    display: none;
+  }
+  .jumbotron-title, .jumbotron-subtitle,.why-esamudaay-block-title, .our-offerings-block-title, .our-offerings-block-subtitle {
     display: flex;
     justify-content: center;
     text-align: center;
   }
-  .jumbotron-contact-button,.jumbotron-image,.navbar-image {
+  .jumbotron-conta
+  ct-button,.navbar-image {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  .jumbotron-body{
-    flex-direction: column-reverse !important;
+  .jumbotron-content{
+    padding: 54px 0 54px 0;
   }
-  .jumbotron-image {
+  .our-offerings-block-inner-title-outer {
     margin-top: 24px;
-  }
-  .success-block-card-outer {
     display: flex;
-    justify-content: center !important;
-    margin: 16px 0 !important;
+    justify-content: center;
+  }
+  .our-offerings-block-inner-title,.our-offerings-block-inner-subtitle {
+    text-align: center;
+  }
+  .our-offerings-block-inner-logistics,.our-offerings-block-inner-buyer {
+    flex-direction: column-reverse;
+  }
+  .our-offerings-block-subtitle{
+    width: 100%;
   }
   .our-offerings-block-card, .why-esamudaay-block-card{
     text-align: center;
@@ -222,5 +287,22 @@ padding: 6px 0;
   .our-offerings-block-card-title-outer, .why-esamudaay-block-card-icon{
     display: flex;
     justify-content: center;
+  }
+  .btn-contact-desktop,.testimonial-left-quote img {
+    display: none;
+  }
+  .testimonial-title{
+    text-align: center;
+    margin-bottom: 54px;
+  }
+  .plugins-block-title,.btn-contact-us {
+    width: 100%;
+  }
+  .btn-contact-mobile{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0 24px 10px 24px;
   }
 }
