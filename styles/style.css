@@ -268,7 +268,6 @@ color: #808080;
   font-family: "Tillana";
   color: #F05C2B;
 }
-
 /* mobile view */
 @media (max-width: 576px){
   .jumbotron-body{
