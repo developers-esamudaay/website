@@ -15,22 +15,40 @@ a{
 .jumbotron-content{
   padding: 54px 0 220px 0;
 }
-.jumbotron-title {
-  font-size: 36px;
+.jumbotron-title-technology {
+  font-size: 54px;
   font-weight: 600;
   color: #481c0d;
+  line-height: 1.3;
+}
+.jumbotron-title-open-world{
+  font-size: 54px;
+  font-weight: 600;
+  color: #481c0d;
+  line-height: 1.3;
+  font-weight: 700;
+  background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #FF473E, #FFC727);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
 }
 .jumbotron-subtitle {
-  /* position: relative; */
   font-size: 20px;
   font-weight: 400;
-  color: #333333;
-  padding: 24px 0;
+  color: 
+  #4d4d4d;
+  padding: 28px 0;
+  line-height: 1;
+  margin-top: 16px;
 }
-.jumbotron-image {
-  position: absolute;
-  right: 0;
-  top: 140px;
+.jumbotron-image-desktop {
+  display: flex;
+  justify-content: end;
+}
+.jumbotron-image-mobile{
+  display: none;
 }
 .btn-contact-us, .btn-contact-us:hover{
   color: #fff;
@@ -41,14 +59,14 @@ a{
 /* our offerings block  */
 .our-offerings-block {
   padding: 64px 0;
-  background-color: #fdefea;
+  background-color: #fefaf0;
   color: #481c0d;
 }
 .our-offerings-block-title {
   font-size: 36px;
   font-weight: 600;
   text-align: center;
-  color: #211438;
+  color: #481c0d;
 }
 .our-offerings-block-subtitle-outer{
   display: flex;
@@ -60,6 +78,9 @@ a{
   padding: 4px 0;
   width: 50%;
   text-align: center;
+}
+.our-offerings-block-inner-subtitle-fast{
+  color: #f05c2b;
 }
 .our-offerings-outer-block{
 padding: 100px 0 50px 0;
@@ -250,16 +271,29 @@ color: #808080;
 
 /* mobile view */
 @media (max-width: 576px){
-  .jumbotron-image{
-    display: none;
+  .jumbotron-body{
+    display: flex;
+    flex-direction: column-reverse;
   }
-  .jumbotron-title, .jumbotron-subtitle,.why-esamudaay-block-title, .our-offerings-block-title, .our-offerings-block-subtitle {
+  .jumbotron-image-desktop{
+    display: none
+  }
+  .jumbotron-image-mobile{
+    display: flex;
+    justify-content: center;
+  }
+  .jumbotron-title-technology,.jumbotron-title-open-world, .jumbotron-subtitle,.why-esamudaay-block-title, .our-offerings-block-title, .our-offerings-block-subtitle {
     display: flex;
     justify-content: center;
     text-align: center;
   }
-  .jumbotron-conta
-  ct-button,.navbar-image {
+  .jumbotron-title-technology,.jumbotron-title-open-world{
+    font-size: 44px;
+  }
+  .our-offerings-block-title, .plugins-block-title,.why-esamudaay-block-title, .testimonial-title{
+    font-size: 30px;
+  }
+  .jumbotron-contact-button,.navbar-image {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -305,5 +339,8 @@ color: #808080;
     width: 100%;
     padding: 0 24px 10px 24px;
     z-index: 999;
+  }
+  .testimonial-card-body{
+    padding: 64px 28px;
   }
 }
