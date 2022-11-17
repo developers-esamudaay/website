@@ -11,20 +11,6 @@ a{
 .navbar-block {
   padding: 16px 0;
 }
-.nav-link-text{
-  color: #4D4D4D;
-  font-weight: 400;
-}
-.nav-link-text:hover{
-color: #F05C2B;
-}
-.navbar-block-inner{
-  display: flex;
-  justify-content: space-between;
-}
-.nav-item{
-  padding: 0 16px;
-}
 /* jumbotron block */
 .jumbotron{
   background-color: #FEFAF0;
@@ -312,8 +298,9 @@ color: #808080;
 }
 /* mobile view */
 @media (max-width: 576px){
-  .nav-item{
-    padding: 8px;
+  .navbar-image{
+    display: flex;
+    justify-content: center;
   }
   .jumbotron-body{
     display: flex;
