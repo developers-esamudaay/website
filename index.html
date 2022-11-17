@@ -7,6 +7,7 @@
     <title>developers esamudaay</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link href="./styles/style.css" rel="stylesheet">
 </head>
 
@@ -16,16 +17,56 @@
             <button class="btn btn-contact-us">Contact Us</button>
         </a>
     </div>
-    <nav class="navbar-block">
+    <nav class="navbar navbar-expand-lg" aria-label="Third navbar example">
         <div class="container">
-            <div class="navbar-image">
-                <div>
-                    <img src="./images/esamudaay-red.svg" alt="esamudaay white icon" />
+            <div style="display: flex; justify-content: space-between !important">
+                <div class="navbar-image">
+                    <div>
+                        <img src="./images/esamudaay-red.svg" alt="esamudaay white icon" />
+                    </div>
                 </div>
+                <button class="navbar-toggler" style="margin-left: 80px;" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#jumbotron   ">
+                            <p class="nav-link-text">
+                                Home
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#ourOfferingsBlock">
+                            <p class="nav-link-text">
+                                Our Products
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#pluginsBlock">
+                            <p class="nav-link-text">
+                                Plugins
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#whyEsamudaayBlock">
+                            <p class="nav-link-text">
+                                About Us
+                            </p>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
-    <section class="jumbotron">
+    <section class="jumbotron" id="jumbotron">
         <div class="container">
             <div class="row pb-5 jumbotron-body">
                 <div class="col-lg-6 col-md-6 col-sm-12">
@@ -38,7 +79,7 @@
                             </p>
                         </div>
                         <div class="jumbotron-image-mobile">
-                            <img src="./images/jumbotron-image.svg" />
+                            <img height="400" src="./images/jumbotron-image.svg" />
                         </div>
                         <div class="jumbotron-subtitle">
                             <p>
@@ -63,7 +104,39 @@
             </div>
         </div>
     </section>
-    <section class="our-offerings-block">
+    <section class="our-customers">
+        <div class="container">
+            <div class="our-customers-title">
+                <p>
+                    Our Customers
+                </p>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class=" our-customer-logo" height="116" src="./images/changepay-logo.png"
+                            alt="changepay logo" />
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="our-customer-logo" height="116" src="./images/gogappi-logo.png"
+                            alt="gogappi logo" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="our-customer-logo" height="116" src="./images/bhimavaram-logo.png"
+                            alt="bhimavaram logo" />
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="our-customer-logo" height="116" src="./images/hometown-logo.jpeg"
+                            alt="home town logo" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="our-offerings-block" id="ourOfferingsBlock">
         <div class="container">
             <div class="our-offerings-block-title">
                 <p>
@@ -83,11 +156,15 @@
                             <div class="our-offerings-block-inner-title-outer">
                                 <p class="our-offerings-block-inner-title">Buyer SDK</p>
                             </div>
-                            <p class="our-offerings-block-inner-subtitle">eSamudaay’s buyer SDK for ONDC will reduce the
-                                time to market for your launch by over 80%. Our backward SDK supports multiple versions
-                                of ONDC spec thus making sure you work with all seller network participants
-                                <span class="our-offerings-block-inner-subtitle-fast"><b>FAST</b></span>
-                            </p>
+                            <div class="our-offerings-block-inner-subtitle">
+                                <p class="mb-2">Our backward compatible SDK supports multiple versions of ONDC spec thus
+                                    making sure you work with all seller network participants
+                                    <span class="our-offerings-block-inner-subtitle-fast"><b>FAST</b></span>
+                                </p>
+                                <p>eSamudaay’s buyer SDK for ONDC will reduce the time to market for your launch by over
+                                    80%.
+                                </p>
+                            </div>
                             <div class="our-offerings-block-inner-contact-button btn-contact-desktop">
                                 <a href="https://forms.gle/zjvP7b2VAKxezFhRA" target="_blank">
                                     <button type="button" class="btn btn-contact-us">Contact Us</button>
@@ -110,12 +187,16 @@
                             <div class="our-offerings-block-inner-title-outer">
                                 <p class="our-offerings-block-inner-title">Seller SDK</p>
                             </div>
-                            <p class="our-offerings-block-inner-subtitle">eSamudaay’s seller side SDK comes bundled with
-                                Catalog and Order management that’s been used in production by thousands of sellers so
-                                you can build your seller experience on ONDC with confidence. Our SDK is pre-tested with
-                                buyer apps on ONDC which means you go from writing your business logic to production
-                                <span class="our-offerings-block-inner-subtitle-fast"><b>FAST</b></span>
-                            </p>
+                            <div class="our-offerings-block-inner-subtitle">
+                                <p class="mb-2">eSamudaay’s seller side SDK comes bundled with Catalog and Order
+                                    management that’s been used in production by thousands of sellers so you can build
+                                    your seller experience on ONDC with confidence.
+                                </p>
+                                <p>Our SDK is pre-tested with buyer apps on ONDC which means you go from writing your
+                                    business logic to production
+                                    <span class="our-offerings-block-inner-subtitle-fast"><b>FAST</b></span>
+                                </p>
+                            </div>
                             <div class="our-offerings-block-inner-contact-button btn-contact-desktop">
                                 <a href="https://forms.gle/zjvP7b2VAKxezFhRA" target="_blank">
                                     <button type="button" class="btn btn-contact-us">Contact Us</button>
@@ -149,7 +230,7 @@
             </div>
         </div>
     </section>
-    <section class="plugins-block">
+    <section class="plugins-block" id="pluginsBlock">
         <div class="container">
             <div class="plugins-block-title-outer">
                 <p class="plugins-block-title">Supercharge your ONDC journey using our plugins and reference
@@ -158,17 +239,22 @@
             </div>
             <div class="plugins-block-logos">
                 <div class="row">
-                    <div class="col-md-3 d-flex justify-content-center plugins-block-logo">
+                    <div class="col-md-4 d-flex justify-content-center plugins-block-logo">
                         <img width="200" src="./images/shopify-logo.svg" />
                     </div>
-                    <div class="col-md-3 d-flex justify-content-center plugins-block-logo">
+                    <div class="col-md-4 d-flex justify-content-center plugins-block-logo">
                         <img width="200" src="./images/magento-logo.svg" />
                     </div>
-                    <div class="col-md-3 d-flex justify-content-center plugins-block-logo">
+                    <div class="col-md-4 d-flex justify-content-center plugins-block-logo">
                         <img width="200" src="./images/react-logo.svg" />
                     </div>
-                    <div class="col-md-3 d-flex justify-content-center plugins-block-logo">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center plugins-block-logo">
                         <img width="200" src="./images/flutter-logo.svg" />
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center plugins-block-logo">
+                        <img width="200" src="./images/firebase-icon.svg" />
                     </div>
                 </div>
             </div>
@@ -179,7 +265,7 @@
             </div>
         </div>
     </section>
-    <section class="why-esamudaay-block">
+    <section class="why-esamudaay-block" id="whyEsamudaayBlock">
         <div class="why-esamudaay-block-title-block">
             <div class="container">
                 <p class="why-esamudaay-block-title">Why eSamudaay?</p>
@@ -199,8 +285,10 @@
                                 <p>Speed to Market</p>
                             </div>
                             <div class="why-esamudaay-block-card-content text-center">
-                                <p>Our architecture choices leads to the shorter learning curve. It is ready to use
-                                    open-source reference applications. Plugins are avalable as well.</p>
+                                <p>Our simple-to-use SDK combined with reference applications and plugins means a
+                                    shorter learning curve so you launch FAST <span><img height="24"
+                                            src="./images//rocket.png" alt="Rocket" /></span>
+                                </p>
 
                             </div>
                         </div>
@@ -209,15 +297,17 @@
                         <div class="why-esamudaay-block-card card my-4">
                             <div class="why-esamudaay-block-card-icon">
                                 <div class="why-esamudaay-block-card-icon-block">
-                                    <img src="./images/reliability-logo.svg" alt="speed to market icon" />
+                                    <img src="./images/reliability-logo.svg" alt="Reliability     icon" />
                                 </div>
                             </div>
                             <div class="why-esamudaay-block-card-title text-center">
                                 <p>Reliability</p>
                             </div>
                             <div class="why-esamudaay-block-card-content text-center">
-                                <p>This is super well document giving backward compatibility and supports multiple
-                                    versions.</p>
+                                <p>Our technology supports 1000s of orders in production every day. When you use our
+                                    SDK, you get the same technology so you stay stress-free before and after the
+                                    launch.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -225,14 +315,20 @@
                         <div class="why-esamudaay-block-card card my-4">
                             <div class="why-esamudaay-block-card-icon">
                                 <div class="why-esamudaay-block-card-icon-block">
-                                    <img src="./images/support-logo.svg" alt="speed to market icon" />
+                                    <img src="./images/support-logo.svg" alt="Support icon" />
                                 </div>
                             </div>
                             <div class="why-esamudaay-block-card-title text-center">
                                 <p>Support</p>
                             </div>
                             <div class="why-esamudaay-block-card-content text-center">
-                                <p>We hand hold you all the way live to production of ONDC.</p>
+                                <p>Our best-in-class documentation means your team can work without having to spend
+                                    hours on meetings.
+                                </p>
+                                <p>
+                                    We have worked with multiple NPs on ONDC from start to launch. We will share our
+                                    expertise to make your ONDC onboarding hassle-free.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -282,24 +378,9 @@
             </div>
     </section>
     <section class="footer">
-        <footer class="footer-block">
-            <div class="container">
-                <div class="footer-block-upper">
-                    <div class="d-flex justify-content-center mb-4">
-                        <img src="./images/esamudaay-red.svg" />
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <p class="footer-text">eSamudaay for developers builds tools for technical
-                            developers allowing
-                            you
-                            to
-                            create digital businesses rapidly.</p>
-                    </div>
-                    <div class="d-flex justify-content-center p-4">
-                        <a href="https://forms.gle/zjvP7b2VAKxezFhRA" target="_blank">
-                            <button class="btn btn-contact-us">Contact Us</button>
-                        </a>
-                    </div>
+        <footer>
+            <div class="container footer-block">
+                <div class="">
                     <div class="footer-contact-social d-flex justify-content-center">
                         <div class="footer-contact-social-youtube">
                             <a href="https://www.youtube.com/channel/UC3Bs0cDgSf9jrpmWzUgZ24A" target="_blank">
@@ -317,18 +398,17 @@
                         </div>
                     </div>
                 </div>
+                <p class="py-2 footer-block-lower-text text-center">Designed by eSamudaay for
+                    developers</p>
             </div>
-            <div class="footer-block-lower">
-                <div class="container">
-                    <p class="py-2 d-flex justify-content-center footer-block-lower-text">Designed by eSamudaay for
-                        developers</p>
-                </div>
-            </div>
+
         </footer>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./js/index.js"></script>
 
 </html>

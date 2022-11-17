@@ -11,9 +11,28 @@ a{
 .navbar-block {
   padding: 16px 0;
 }
+.nav-link-text{
+  color: #4D4D4D;
+  font-weight: 400;
+}
+.nav-link-text:hover{
+color: #F05C2B;
+}
+.navbar-block-inner{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-item{
+  padding: 0 16px;
+}
 /* jumbotron block */
-.jumbotron-content{
-  padding: 54px 0 220px 0;
+.jumbotron{
+  background-color: #FEFAF0;
+}
+.jumbotron-body {
+  padding: 32px 0 220px 0;
+  display: flex;
+  align-items: center;
 }
 .jumbotron-title-technology {
   font-size: 54px;
@@ -55,6 +74,33 @@ a{
   background-color: #ff473e;
   font-weight: 600;
   height: 48px;
+}
+/* our customers */
+.our-customers{
+  padding: 64px 0;
+}
+.our-customers-title {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  color: #481c0d;
+}
+.our-customer-logo {
+  /* background-color: #DD1D94; */
+  -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+}
+.our-customer-logo:hover{
+  -webkit-filter: grayscale(0%);
+                filter: grayscale(0%);
+}
+/* swiper */
+.swiper{
+  margin-top: 48px;
+}
+.swiper-slide{
+  display: flex;
+  justify-content: center;
 }
 /* our offerings block  */
 .our-offerings-block {
@@ -146,7 +192,7 @@ font-weight: 600;
 }
 .why-esamudaay-block-card {
   padding: 32px;
-  min-height: 360px;
+  min-height: 390px;
   box-shadow: 1px 1px 4px 2px rgba(255, 199, 39, 0.24);
   border-radius: 16px;
   border: none;
@@ -165,9 +211,6 @@ font-weight: 600;
 padding: 6px 0;
 }
 /* footer */
-.footer-block{
-  background-color: #FDEFEA;
-}
 .footer-contact-button {
   background-color: #5F3A9F;
   color: #fff;
@@ -176,11 +219,10 @@ padding: 6px 0;
   background-color: #5F3A9F;
   color: #fff;
 }
-.footer-block-upper {
-  padding: 64px 0;
-}
-.footer-block-lower {
+.footer-contact-social-youtube, .footer-contact-social-linkedin {
   background-color: #FDEFEA;
+  border-radius: 50px;
+  margin: 8px
 }
 .footer-text{
   text-align: center;
@@ -270,6 +312,9 @@ color: #808080;
 }
 /* mobile view */
 @media (max-width: 576px){
+  .nav-item{
+    padding: 8px;
+  }
   .jumbotron-body{
     display: flex;
     flex-direction: column-reverse;
@@ -294,8 +339,6 @@ color: #808080;
   }
   .jumbotron-contact-button,.navbar-image {
     width: 100%;
-    display: flex;
-    justify-content: center;
   }
   .jumbotron-content{
     padding: 54px 0 54px 0;
