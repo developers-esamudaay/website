@@ -73,7 +73,6 @@ a{
   color: #481c0d;
 }
 .our-customer-logo {
-  /* background-color: #DD1D94; */
   -webkit-filter: grayscale(100%);
                 filter: grayscale(100%);
 }
@@ -372,5 +371,9 @@ color: #808080;
   }
   .testimonial-card-body{
     padding: 64px 28px;
+  }
+  .our-customer-logo {
+    -webkit-filter: grayscale(0%);
+                  filter: grayscale(0%);
   }
 }
